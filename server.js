@@ -18,11 +18,21 @@ var onDefault=function(req, res){
     res.send("<h1>Welcome to the Cloud Computing Module</h1>"+
               "<hr/>"+
               "<ol>"+
-                    " <liIntroduction to the cloud</li>"+
-                    " <li>Cloud Services</li>"+
-                    " <li>IaaS, PaaS, SaaS</li>"+
-                    " <li>Creating AWS EC2 Instances</li>"+
-             "</ol>");
+                    " <h5><li>Introduction to the cloud</li>"+
+                    " <h5><li>Cloud Services</li>"+
+                    " <h5><li>IaaS, PaaS, SaaS</li>"+
+                    " <h5><li>Creating AWS EC2 Instances</li>"+
+                    "<hr/>"+
+                    "<hr/>"+
+             "</ol>"+
+             "<h3>Docker Basic Commands</h3>"+
+             "<ol>"+
+             " <h5><li>sudo apt install docker.io</li>"+
+             " <h5><li>sudo systemctl status docker</li>"+
+             " <h5><li>sudo docker ps</li>"+
+             " <h5><li>sudo docker images</li>"+
+      "</ol>"+
+             );
 };
 app.get("/",onDefault);  // Request handler functions are registered
 app.get("/aboutus",onAboutUs);  // Request handler functions are registered
