@@ -31,7 +31,7 @@ var onDefault=function(req, res){
              " <h5><li>sudo systemctl status docker</li>"+
              " <h5><li>sudo docker ps</li>"+
              " <h5><li>sudo docker images</li>"+
-      "</ol>"+
+      "</ol>"
              );
 };
 app.get("/",onDefault);  // Request handler functions are registered
